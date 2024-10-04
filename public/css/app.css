@@ -1,0 +1,203 @@
+/* Estilos básicos para o corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Azul claro de fundo */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o body ocupe 100% da altura da tela */
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #0077b6; /* Azul mais forte */
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Menu de navegação */
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+header nav ul li.logo img {
+    height: 50px; /* Tamanho da logo */
+    width: auto;
+}
+
+/* Estilo dos links do menu */
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: transparent; /* Cor de fundo transparente */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+header nav ul li a:hover {
+    background-color: #90e0ef; /* Mudança de cor ao passar o mouse */
+    transform: scale(1.05); /* Leve aumento no hover */
+}
+
+/* Estilo do conteúdo principal */
+main {
+    flex: 1; /* Faz com que o conteúdo expanda para ocupar o espaço disponível */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 500px;
+    
+}
+
+main .conteudo h1 {
+    color: #0077b6;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+main .conteudo p {
+    color: #333;
+    font-size: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+
+}
+
+/* Estilo do rodapé fixo */
+footer {
+    background-color: #023e8a; /* Azul escuro */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Sombra no topo do rodapé */
+    width: 100%;
+    position: fixed; /* Faz o rodapé ficar fixo no final */
+    bottom: 0;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+footer p:nth-child(1) {
+    font-weight: bold;
+    font-size: 16px;
+}
+/* Estilo da logo */
+.logo {
+    position: relative; /* Permite que o link seja posicionado em relação à logo */
+}
+
+.logo img {
+    height: 50px; /* Tamanho da logo */
+    width: auto;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    transition: transform 0.3s ease; /* Transição suave para o efeito hover */
+}
+
+/* Estilo do link invisível */
+.logo-link {
+    position: absolute; /* Permite que o link fique sobre a imagem */
+    top: 0; /* Posiciona o link no topo da logo */
+    left: 0; /* Posiciona o link à esquerda da logo */
+    height: 100%; /* Faz com que o link cubra toda a altura da logo */
+    width: 100%; /* Faz com que o link cubra toda a largura da logo */
+    text-indent: -9999px; /* Oculta o texto do link */
+    overflow: hidden; /* Garante que qualquer conteúdo não apareça */
+    background: rgba(255, 255, 255, 0); /* Torna o fundo invisível */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+/* Efeito hover para a imagem */
+.logo img:hover {
+    transform: scale(1.1); /* Aumenta a logo levemente ao passar o mouse */
+}
+
+/* Estilo do conteúdo principal */
+main {
+    flex: 1; /* Faz com que o conteúdo expanda para ocupar o espaço disponível */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #0077b6;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Container dos produtos */
+.produtos-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os produtos se ajustem em várias linhas */
+    justify-content: center; /* Centraliza os produtos */
+    gap: 20px; /* Espaço entre os produtos */
+}
+
+/* Estilo dos produtos */
+.produto {
+    background-color: #ffffff; /* Fundo branco para as caixas */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    width: 250px; /* Largura fixa para as caixas */
+    padding: 15px;
+    transition: transform 0.3s; /* Efeito de transição suave */
+}
+
+.produto:hover {
+    transform: scale(1.05); /* Aumento leve ao passar o mouse */
+}
+
+.produto img {
+    width: 100%; /* Faz a imagem ocupar toda a largura da caixa */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 5px; /* Bordas arredondadas para a imagem */
+}
+
+h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.preco {
+    color: #0077b6; /* Cor para o preço */
+    font-weight: bold;
+}
+
+.comprar {
+    background-color: #00b4d8; /* Cor do botão */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comprar:hover {
+    background-color: #90e0ef; /* Mudança de cor ao passar o mouse */
+}
+
